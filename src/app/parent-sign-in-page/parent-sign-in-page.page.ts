@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-parent-sign-in-page',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentSignInPagePage implements OnInit {
 
-  constructor() { }
+  checkParentSignIn(){
+    this.route.navigate(['/parent-tabs']);
+  }
+
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
+
 
 }

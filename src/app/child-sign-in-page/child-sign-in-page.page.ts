@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
+
+const childSignInBtn = document.querySelector('#child-button-confirm');
 
 @Component({
   selector: 'app-child-sign-in-page',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildSignInPagePage implements OnInit {
 
-  constructor() { }
+  checkChildSignIn(){
+    this.route.navigate(['/child-tabs']);
+  }
+
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
+
+
 
 }

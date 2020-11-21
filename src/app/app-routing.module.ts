@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'new-account-page',
     loadChildren: () => import('./new-account-page/new-account-page.module').then( m => m.NewAccountPagePageModule)
   },
+  {
+    path: 'child-tabs',
+    loadChildren: () => import('./child-tabs/child-tabs.module').then( m => m.ChildTabsPageModule)
+  },
+  {
+    path: 'parent-tabs',
+    loadChildren: () => import('./parent-tabs/parent-tabs.module').then( m => m.ParentTabsPageModule)
+  },
 ];
 
 @NgModule({
