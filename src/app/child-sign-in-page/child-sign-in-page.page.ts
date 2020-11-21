@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 const childSignInBtn = document.querySelector('#child-button-confirm');
