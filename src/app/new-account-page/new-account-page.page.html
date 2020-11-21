@@ -1,0 +1,62 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Child Signin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Make a new account</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="floating" id="createFirstName">First Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="createLastName">Last Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="createEmail">Email</ion-label>
+                <ion-input type="email"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="createPhone">Phone Number</ion-label>
+                <ion-input type="tel"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="createPassword1">Password</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="createPassword2">Password</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label  id="isChild">Child</ion-label>
+                <ion-checkbox color="primary"></ion-checkbox>
+              </ion-item>
+
+              <ion-button id="createAccountButton">
+                Create Account
+              </ion-button>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

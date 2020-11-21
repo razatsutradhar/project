@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'child-sign-in-page',
     loadChildren: () => import('./child-sign-in-page/child-sign-in-page.module').then( m => m.ChildSignInPagePageModule)
   },
+  {
+    path: 'new-account-page',
+    loadChildren: () => import('./new-account-page/new-account-page.module').then( m => m.NewAccountPagePageModule)
+  },
 ];
 
 @NgModule({

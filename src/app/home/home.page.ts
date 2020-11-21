@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
 
 export class HomePage {
 
+  createNewAccountPage (){
+    console.log('parent');
+    this.route.navigate(['/new-account-page']);
+  }
+
   parentSignIn (){
     console.log('parent');
     this.route.navigate(['/parent-sign-in-page']);

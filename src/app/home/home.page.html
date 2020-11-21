@@ -10,7 +10,7 @@
 
   <ion-content [fullscreen]="true">
 
-      <ion-button>Create Account</ion-button>
+      <ion-button (click)="createNewAccountPage()">Create Account</ion-button>
       <ion-img style="width: 300px; height: 300px;" src="../assets/img/parent.jpg" (click)="parentSignIn()" id="parentBtn"></ion-img>
       <ion-img style="width: 300px; height: 300px;" src="../assets/img/child.png" (click)="childSignIn()" id="childBtn"></ion-img>
 
