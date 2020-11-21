@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Parent Signin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Login</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="floating" id="reason">Username</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating" id="amount">Password</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <ion-button id="button-confirm">
+                Sign in
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

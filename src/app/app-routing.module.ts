@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'parent-sign-in-page',
+    loadChildren: () => import('./parent-sign-in-page/parent-sign-in-page.module').then( m => m.ParentSignInPagePageModule)
+  },
+  {
+    path: 'child-sign-in-page',
+    loadChildren: () => import('./child-sign-in-page/child-sign-in-page.module').then( m => m.ChildSignInPagePageModule)
+  },
 ];
 
 @NgModule({
