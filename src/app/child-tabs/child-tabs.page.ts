@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-child-tabs',
   templateUrl: './child-tabs.page.html',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildTabsPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+}
 
   ngOnInit() {
   }

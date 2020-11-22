@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+// const fs = require("fs");
 // const fs = require('fs')
 
 // // Create connection to database
